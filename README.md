@@ -1,4 +1,4 @@
-# SquiggleLeap
+# Squiggle Leap
 A Shameless Doodle Jump Clone
 
 ## Why?
