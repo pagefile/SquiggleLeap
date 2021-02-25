@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class KeyboardInput : MonoBehaviour
 {
-    IBasicMovement _bm = default;
+    private IBasicMovement _bm = default;
     
     private void Start()
     {
