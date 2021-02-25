@@ -23,9 +23,6 @@ public class Movement : MonoBehaviour, IBasicMovement
 
     private void FixedUpdate()
     {
-        // Because for some reason the 2D physics doesn't have feature parity with 3D?
-        // ForceMode2D does not have VelocityChange
-        // Wait...Rigidbody2D has gravity scale and 3D doesn't? What is this nonsense?
-        _rb.velocity += _moveVector * Time.fixedDeltaTime;
+        _rb.velocity = new Vector2(_moveVector.x, _rb.velocity.y);
     }
 }
